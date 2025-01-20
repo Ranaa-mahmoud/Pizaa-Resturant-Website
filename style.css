@@ -76,7 +76,7 @@ header {
 }
 #home img {
   width: 40%;
-  max-width: 200%; 
+  max-width: 200%;
   height: auto;
   animation: rotate-image 5s linear infinite;
 }
@@ -210,7 +210,7 @@ header {
 }
 .menu-image img {
   max-width: 70%;
-  height: auto; 
+  height: auto;
   object-fit: contain;
   border-radius: 50%;
   transition: 0.3s;
@@ -263,8 +263,8 @@ header {
   font-size: xx-large;
 }
 .menu-icon {
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   gap: 5px;
   color: #fac031;
   margin-bottom: 15px;
@@ -277,7 +277,12 @@ header {
   color: black;
   font-family: Verdana, sans-serif;
   font-weight: bolder;
+  transition: 0.3s ease;
 }
+.menu-btn:hover {
+  color: white;
+}
+
 /**********END SECTION MENU*************/
 /**********START SECTION GALLARY *************/
 #gallary {
@@ -403,7 +408,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
-  justify-content: center; 
+  justify-content: center;
   position: relative;
   top: 15%;
 }
@@ -545,7 +550,7 @@ header {
   outline: none;
   border-radius: 3px;
 }
-.contact-main form .input p{
+.contact-main form .input p {
   margin-bottom: 10px;
 }
 
@@ -613,7 +618,7 @@ footer .footer-end p {
   font-weight: bolder;
   font-size: x-large;
   color: #fac031;
-} 
+}
 /********** END END FOOTER*************/
 
 /***************RESPONSIVE STYLES FOR TABLETS AND SMALL DESKTOPS*********************/
@@ -726,7 +731,7 @@ footer .footer-end p {
   }
 }
 /***************RESPONSIVE STYLES FOR MOBILE AND TABLETS*********************/
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .menu-toggle {
     display: block;
     margin-right: 15px;
@@ -795,7 +800,7 @@ footer .footer-end p {
     margin: auto;
   }
   #menu .menu-box {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   #menu h1 {
     font-size: 60px;
@@ -832,7 +837,7 @@ footer .footer-end p {
     font-weight: 700;
   }
   .team .team-box {
-    grid-template-columns: 1fr 1fr; /* 4 أعمدة كل عمود عرضه 250px */
+    grid-template-columns: 1fr;
   }
   .team .team-box .profile {
     margin: 0 auto;
@@ -855,7 +860,6 @@ footer .footer-end p {
   footer .footer-end {
     gap: 30px;
   }
-  
 }
 /***************RESPONSIVE STYLES FOR MOBILE PHONES*********************/
 @media (max-width: 480px) {
@@ -873,9 +877,6 @@ footer .footer-end p {
   }
   .gallary-image-box .gallary-image h3 {
     font-size: 22px;
-  }
-  .team .team-box {
-    grid-template-columns: 1fr; /* 4 أعمدة كل عمود عرضه 250px */
   }
   .team .team-box .profile {
     margin: 0 auto;
@@ -904,4 +905,3 @@ footer .footer-end p {
     grid-template-columns: 1fr;
   }
 }
-
