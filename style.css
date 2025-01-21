@@ -853,12 +853,16 @@ footer .footer-end p {
     flex-direction: column;
     gap: 50px;
   }
-
+  .contact-main form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   footer .footer-main {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   footer .footer-end {
-    gap: 30px;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 /***************RESPONSIVE STYLES FOR MOBILE PHONES*********************/
@@ -881,13 +885,6 @@ footer .footer-end p {
   .team .team-box .profile {
     margin: 0 auto;
   }
-  footer .footer-main {
-    grid-template-columns: 1fr;
-  }
-  footer .footer-end {
-    flex-direction: column;
-    gap: 20px;
-  }
   footer .footer-end h2 {
     font-size: small;
   }
@@ -899,9 +896,5 @@ footer .footer-end p {
   }
   .contact-image img {
     width: 100%;
-  }
-  .contact-main form {
-    display: grid;
-    grid-template-columns: 1fr;
   }
 }
